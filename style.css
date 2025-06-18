@@ -1,0 +1,49 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  cursor: url('cursor.png'), auto; /* İmleci değiştirir */
+}
+
+#gameCanvas {
+  display: block;
+}
+
+#score {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: monospace;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
+
+#restartButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px 30px;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #1a73e8;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  display: none; /* Bu satır çok önemli! Düğmeyi başlangıçta gizler. */
+}
+
+#highScore {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+  font-size: 24px;
+  font-family: monospace;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 12px;
+  border-radius: 8px;
+}
